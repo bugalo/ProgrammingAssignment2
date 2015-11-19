@@ -61,7 +61,7 @@ cacheSolve <- function(x, ...) {
     }
 
     ## If either the inverse has not previously been calculated, or the matrix 
-    ## x has changed since then, calculate the matrix inverse and return it.
+    ## x has changed since then, calculate the matrix inverse and return it..
     data <- x$get()
     inve <- solve(data, ...)
     x$set_inve(inve)
